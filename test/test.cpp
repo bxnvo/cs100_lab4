@@ -1,9 +1,16 @@
 #include "gtest/gtest.h"
-#include "../include/Triangle.h"
-using shapes::Triangle;
+#include "../include/Hailstone.h"
 
+using sequence::satisfiesHailstone;
 
-TEST(TriangleTests, testPerimeter) {
-    Triangle *aTriangle = new Triangle(3,3,3);
-    EXPECT_EQ (aTriangle->getPerimeter(),9);
+TEST(HailstoneTESTS,inputNum1) {
+    EXPECT_EQ (satisfiesHailstone(1),true);
+}
+
+TEST(HailstoneTESTS,inputNum0) {
+    EXPECT_EQ (satisfiesHailstone(0),false);
+}
+
+TEST(HailstoneTESTS,inputNum20) {
+    EXPECT_EQ (satisfiesHailstone(20),true);
 }
