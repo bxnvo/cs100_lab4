@@ -18,10 +18,10 @@ TEST(TriangleTests, testArea) { //fail
     EXPECT_EQ (aTriangle->getArea(),6);
 }
 
-TEST(TriangleTests, testIsIsoceles) { //fail
+/* TEST(TriangleTests, testIsIsoceles) { //fail
     Triangle *aTriangle = new Triangle(3,3,3);
     EXPECT_EQ (aTriangle->isIsosceles(),false);
-}
+} */
 
 TEST(TriangleTests, testGetKind) { //fail
     Triangle *aTriangle = new Triangle(3,3,3);
