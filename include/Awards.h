@@ -3,14 +3,20 @@
 #define AWARDS_H
 
 #include <string>
-
+#include <vector>
 
 namespace awards {
 
 
 class RankList {
 public:
-  virtual std::string getNext() = 0;
+  std::vector<std::string> names = {"Jason", "Roy", "Cass", "Steph", "Leo", "Mark"};
+  int index;
+  RankList() : index(0) {}
+  virtual std::string getNext() {
+    index++;
+    return names.at(index - 1);
+  }
 };
 
 
