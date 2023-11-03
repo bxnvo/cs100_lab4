@@ -18,6 +18,10 @@ add_executable(runAwardsTests
   awardsTest.cpp 
 )
 
-target_link_libraries(runAllTests gmock gtest gtest_main)
-target_link_libraries(runAllTests simpleLibrary)
+target_link_libraries(runTriangleTests gmock gtest gtest_main)
+target_link_libraries(runTriangleTests simpleLibrary)
+target_link_libraries(runHailstoneTests gmock gtest gtest_main)
+target_link_libraries(runHailstoneTests simpleLibrary)
+target_link_libraries(runAwardsTests gmock gtest gtest_main)
+target_link_libraries(runAwardsTests simpleLibrary)
 
