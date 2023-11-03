@@ -3,14 +3,18 @@
 
 using sequence::satisfiesHailstone;
 
-TEST(HailstoneTESTS,inputNum1) {
+TEST(HailstoneTESTS,input1) {
     EXPECT_EQ (satisfiesHailstone(1),true);
 }
 
-TEST(HailstoneTESTS,inputNum0) {
+TEST(HailstoneTESTS,input0) {
     EXPECT_EQ (satisfiesHailstone(0),false);
 }
 
-TEST(HailstoneTESTS,inputNum20) {
+TEST(HailstoneTESTS,inputEven) {
     EXPECT_EQ (satisfiesHailstone(20),true);
+}
+
+TEST(HailstoneTESTS,inputOdd) {
+    EXPECT_EQ (satisfiesHailstone(21),true);
 }
